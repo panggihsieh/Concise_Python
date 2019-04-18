@@ -9,7 +9,7 @@ line=''
 row=5
 
 
-for i in range(row):
+for i in range(row):# 單獨一個三角形
     s1='-'*(row-1-i)
     s2='/'
     s3='*'*(2*i)
@@ -18,7 +18,7 @@ for i in range(row):
     print(line)
 
 
-for i in range(row):
+for i in range(row): #一列由大到小的三角形
     for j in range(3):
         if i < j:
             line='-'*(row*2-j*2)
